@@ -1,15 +1,18 @@
 
 body {
     margin: 0 0 0 0;
+    color: indigo;
 }
 
 .main-container {
+    padding: 17px 0 0 0;
     background: burlywood;
     width: 100vw;
     height: 200vh;
 }
 
 .head-wrapper {
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 90vw;
@@ -19,6 +22,7 @@ body {
 }
 
 .logo-wrapper {
+    /* position: absolute; */
     display: flex;
     justify-content: center;
     flex: 1;
@@ -37,3 +41,27 @@ body {
 li {
     border: 2px solid black;
 }
+
+.dowload-app {
+    
+    position: relative;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    width: 100vw;
+    height: 800px;
+}
+
+.top-background {
+    background: url(../image/two-whole-pizza-tomato-and-cheese-in-a-wooden-table-wallpaper-3440x1440_15\ \(1\).jpg) no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 1430px;
+    height: 570px;
+    overflow: hidden;
+
+    border: 2px solid blueviolet;
+}
+
