@@ -14,7 +14,7 @@ a {
     padding: 17px 0 0 0;
     background: rgb(255, 255, 255);
     width: 100vw;
-    height: 200vh;
+    height: 500vh;
 }
 
 .head-wrapper {
@@ -29,11 +29,6 @@ a {
     display: flex;
     justify-content: center;
     flex: 0.5;
-}
-
-.logo-wrapper > img {
-    width: 70px;
-    height: 80px;
 }
 
 .head-box {
@@ -90,7 +85,6 @@ a {
     align-items: center;
     flex-direction: column;
     font-size: 1.4em;
-    z-index: 5;
 }
 
 .advertising-info > div > p,
@@ -150,6 +144,29 @@ a {
     background: #990808;
     border: 2px solid #990808;
     transition: all 0.1s ease-in 0s;
+}
+
+.double-phone-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+}
+
+.double-phone-image {
+    margin: -70px 0 110px 0;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-line::after {
+    content: '';
+    background-color: #e4e4e4;
+    height: 3px;
+    width: 900px;
+    display: block;
 }
 
 @media (max-width: 800px) {
