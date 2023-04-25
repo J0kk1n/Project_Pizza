@@ -64,12 +64,13 @@ li {
 }
 
 .top-background {
+    padding: 30px 0;
     position: relative;
     background: url(../image/two-whole-pizza-tomato-and-cheese-in-a-wooden-table-wallpaper-3440x1440_15\ \(1\).jpg) no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 1430px;
     height: 570px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .cover {
@@ -92,16 +93,35 @@ li {
 }
 
 .body-info {
+    display: flex;
+    justify-content: center;
     word-spacing: 5px;
-    font-size: 2.5em;
-    line-height: 15px;
+    font-size: 2.4em;
     text-align: center;
+    width: 80%;
+}
+
+.foot-info {
+    width: 60%;
+    text-align: center;
+    font-size: inherit;
+    line-height: 30px;
+}
+
+.buttons-app {
+    margin: 30px 0;
     width: 70%;
+    display: flex;
+    justify-content: center;
 }
 
 .playstore,
 .app-store {
-    padding: 20px 50px;
+    margin: 0 20px;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    padding: 0.8em 1.5em;
     border-radius: 30px;
     border: 2px solid white;
 }
@@ -120,10 +140,9 @@ li {
     transition: all 0.1s ease-in 0s;
 }
 
-.buttons-app {
-    margin: 40px 0;
-    display: flex;
-    justify-content: space-evenly;
-    width: 50%;
+@media (max-width: 800px) {
+    .advertising-info {
+        font-size: 1.1em;
+    }
 }
 
