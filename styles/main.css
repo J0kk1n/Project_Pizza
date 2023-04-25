@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Roboto+Mono:wght@600&family=Secular+One&family=Sigmar&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Indie+Flower&family=Roboto+Mono:wght@600&family=Secular+One&family=Sigmar&family=Titan+One&display=swap');
+
 body {
-    font-family: 'Titan One', cursive;
+    font-family: 'Secular One', sans-serif;
     margin: 0 0 0 0;
     color: rgb(255, 255, 255);
 }
@@ -9,17 +10,9 @@ a {
     text-decoration: none;
 }
 
-a:visited {
-    color: rgb(255, 255, 255);
-}
-
-li {
-    border: 2px solid black;
-}
-
 .main-container {
     padding: 17px 0 0 0;
-    background: rgb(219, 202, 178);
+    background: rgb(255, 255, 255);
     width: 100vw;
     height: 200vh;
 }
@@ -27,40 +20,49 @@ li {
 .head-wrapper {
     position: relative;
     display: flex;
-    justify-content: space-between;
-    width: 90vw;
-    height: 10vh;
-    margin: 0 auto;
-    border: 2px red solid;
+    width: 1430px;
+    height: 70px;
+    margin: 0 auto -20px auto;
 }
 
 .logo-wrapper {
-    /* position: absolute; */
     display: flex;
     justify-content: center;
-    flex: 1;
-    border: 2px solid green;
+    flex: 0.5;
+}
+
+.logo-wrapper > img {
+    width: 70px;
+    height: 80px;
 }
 
 .head-box {
+    font-size: 1.3em;
+    color: black;
     display: flex;
-    flex: 3;
-    border: 2px blue solid;
+    flex: 2;
     list-style-type: none;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
 }
 
-.dowload-app {
-    
-    position: relative;
-    border: 2px solid black;
+.head-box > li > a {
+    margin: 0 20px 0 120px;
+    cursor: pointer;
+    color: inherit;
+}
 
+.head-box > li:nth-child(1) {
+    color: #fa4a0c;
+}
+
+.dowload-app {
+    position: relative;
     display: flex;
     justify-content: center;
-    margin: 20px auto;
+    margin: 40px auto;
     width: 100vw;
-    height: 800px;
+    height: 600;
 }
 
 .top-background {
@@ -70,7 +72,6 @@ li {
     background-size: cover;
     width: 1430px;
     height: 570px;
-    /* overflow: hidden; */
 }
 
 .cover {
@@ -92,7 +93,14 @@ li {
     z-index: 5;
 }
 
+.advertising-info > div > p,
+.advertising-info > p {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 900;
+}
+
 .body-info {
+    margin: -40px 0;
     display: flex;
     justify-content: center;
     word-spacing: 5px;
@@ -113,6 +121,10 @@ li {
     width: 70%;
     display: flex;
     justify-content: center;
+}
+
+.buttons-app > div > a:visited {
+    color: rgb(255, 255, 255);
 }
 
 .playstore,
@@ -142,7 +154,7 @@ li {
 
 @media (max-width: 800px) {
     .advertising-info {
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
 }
 
