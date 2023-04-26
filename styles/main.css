@@ -51,7 +51,8 @@ a {
     color: #fa4a0c;
 }
 
-.app {
+.app,
+.download {
     position: relative;
     display: flex;
     justify-content: center;
@@ -60,25 +61,22 @@ a {
     height: 600;
 }
 
-.background-img {
+.background-img,
+.background-img-2 {
     padding: 30px 0;
     position: relative;
-    background: url(../image/two-whole-pizza-tomato-and-cheese-in-a-wooden-table-wallpaper-3440x1440_15\ \(1\).jpg) no-repeat;
+    background: url(../image/Background.png) no-repeat;
     background-size: cover;
     width: 1430px;
     height: 570px;
 }
 
-.cover {
-    background: rgba(0, 0, 0, 0.4);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.background-img-2 {
+    background: url(../image/Background_2.png) no-repeat;
 }
 
-.advertising-info {
+.app-info-wrapper,
+.download-info-wrapper {
     position: relative;
     display: flex;
     justify-content: center;
@@ -87,13 +85,20 @@ a {
     font-size: 1.4em;
 }
 
-.advertising-info > div > p,
-.advertising-info > p {
+.download-info-wrapper {
+    padding: 40px 0 0 0;
+}
+
+.app-info-wrapper > div > p,
+.app-info-wrapper > p,
+.download-info-wrapper > div > p,
+.download-info-wrapper > p {
     font-family: 'Indie Flower', cursive;
     font-weight: 900;
 }
 
-.body-info {
+.app-body-text,
+.download-text {
     margin: -40px 0;
     display: flex;
     justify-content: center;
@@ -101,13 +106,6 @@ a {
     font-size: 2.4em;
     text-align: center;
     width: 80%;
-}
-
-.foot-info {
-    width: 60%;
-    text-align: center;
-    font-size: inherit;
-    line-height: 30px;
 }
 
 .buttons-app {
@@ -128,12 +126,12 @@ a {
     border: 2px solid white;
 }
 
-.playstore {
+.btn-orange {
     background: #fa4a0c;
     border: 2px solid #990808;
 }
 
-.btn-orange:hover {
+.btn-active:hover {
     transform: translateY(-1px);
     cursor: pointer;
     background: #990808;
@@ -182,7 +180,6 @@ a {
     display: flex;
     justify-content: space-around;
     width: 1100px;
-    border: 2px solid rgb(34, 224, 28);
 }
 
 .account-wrapper-image > img,
