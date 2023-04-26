@@ -8,32 +8,32 @@ body {
 
 a {
     text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
 .main-container {
-    padding: 17px 0 0 0;
     background: rgb(255, 255, 255);
     width: 100vw;
     height: 500vh;
 }
 
-.head-wrapper {
+.head {
     position: relative;
     display: flex;
     width: 1430px;
-    height: 70px;
+    height: 100px;
     margin: 0 auto -20px auto;
 }
 
-.logo-wrapper {
+.logo {
     display: flex;
     justify-content: center;
     flex: 0.5;
 }
 
-.head-box {
-    font-size: 1.3em;
-    color: black;
+.nav-bar {
+    font-size: 1.1em;
+    color: #252b42;
     display: flex;
     flex: 2;
     list-style-type: none;
@@ -41,26 +41,26 @@ a {
     align-items: center;
 }
 
-.head-box > li > a {
+.nav-bar > li > a {
     margin: 0 20px 0 120px;
     cursor: pointer;
     color: inherit;
 }
 
-.head-box > li:nth-child(1) {
+.nav-bar > li:nth-child(1) {
     color: #fa4a0c;
 }
 
-.dowload-app {
+.app {
     position: relative;
     display: flex;
     justify-content: center;
-    margin: 40px auto;
+    margin: 20px auto 0 auto;
     width: 100vw;
     height: 600;
 }
 
-.top-background {
+.background-img {
     padding: 30px 0;
     position: relative;
     background: url(../image/two-whole-pizza-tomato-and-cheese-in-a-wooden-table-wallpaper-3440x1440_15\ \(1\).jpg) no-repeat;
@@ -117,10 +117,6 @@ a {
     justify-content: center;
 }
 
-.buttons-app > div > a:visited {
-    color: rgb(255, 255, 255);
-}
-
 .playstore,
 .app-store {
     margin: 0 20px;
@@ -137,8 +133,7 @@ a {
     border: 2px solid #990808;
 }
 
-.playstore:hover,
-.app-store:hover {
+.btn-orange:hover {
     transform: translateY(-1px);
     cursor: pointer;
     background: #990808;
@@ -146,17 +141,14 @@ a {
     transition: all 0.1s ease-in 0s;
 }
 
-.double-phone-wrapper {
+.phone {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    /* border: 2px solid blue; */
 }
 
-.double-phone-image {
-    margin: -70px 0 110px 0;
-    width: 60vw;
+.phone-image {
     display: flex;
     justify-content: center;
 }
@@ -169,9 +161,93 @@ a {
     display: block;
 }
 
+.account,
+.varieties,
+.checkout {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #252b42;
+    border: 2px solid orangered;
+}
+
+.account-wrapper,
+.varieties-wrapper,
+.checkout-wrapper {
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-around;
+    width: 1100px;
+    border: 2px solid rgb(34, 224, 28);
+}
+
+.account-wrapper-image > img,
+.varieties-wrapper-image > img,
+.checkout-wrapper-image > img {
+    filter: drop-shadow(0px 0 30px #979797);
+}
+
+.account-wrapper-text,
+.varieties-wrapper-text,
+.checkout-wrapper-text {
+    flex: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.account-wrapper-text > p,
+.varieties-wrapper-text > p,
+.checkout-wrapper-text > p {
+    display: inline-block;
+    margin: 18px 0;
+}
+
+.account-wrapper-text > p:nth-child(odd),
+.varieties-wrapper-text > p:nth-child(odd),
+.checkout-wrapper-text > p:nth-child(odd) {
+    font-size: 0.9em;
+    font-weight: 100;
+    color: #737373;
+}
+
+.account-wrapper-text > p:nth-child(-n+2),
+.varieties-wrapper-text > p:nth-child(-n+2),
+.checkout-wrapper-text > p:nth-child(-n+2){
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.account-wrapper-text > p:nth-child(1),
+.varieties-wrapper-text > p:nth-child(1),
+.checkout-wrapper-text > p:nth-child(1){
+    color: #fa4a0c;
+    font-size: 0.9em;
+}
+
 @media (max-width: 800px) {
     .advertising-info {
         font-size: 1.3em;
     }
 }
 
+@media (max-width: 1430px) {
+    .head-wrapper {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 770px) {
+    .phone-image > img {
+        width: 50vw;
+    }
+
+    /* .registration-phone-wrapper > img {
+        width: 50vw;
+    } */
+}
