@@ -1,1 +1,5 @@
 node_modules
+script.js
+.env
+package-lock.json
+package.json
