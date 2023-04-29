@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo&family=Indie+Flower&family=Roboto+Mono:wght@600&family=Secular+One&family=Sigmar&family=Titan+One&display=swap');
 
-body, html {
+body {
     font-family: 'Secular One', sans-serif;
     color: rgb(255, 255, 255);
     margin: 0 auto;
     max-width: 1440px;
-    min-width: 320px;
+    min-width: 680px;
 }
 
 a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+}
+
+ul {
+    padding: 0;
 }
 
 .main-container {
@@ -47,7 +51,7 @@ a {
 }
 
 .nav-bar > li > a {
-    margin: 0 20px 0 120px;
+    margin: 0 50px;
     cursor: pointer;
     color: inherit;
 }
@@ -67,14 +71,14 @@ a {
 .background-img,
 .background-img-2 {
     position: relative;
-    background: url(../image/Background.png) no-repeat;
+    background: url(Background.png) no-repeat;
     background-size: cover;
-    width: 1430px;
+    width: 1440px;
     height: 570px;
 }
 
 .background-img-2 {
-    background: url(../image/Background_2.png) no-repeat;
+    background: url(Background_2.png) no-repeat;
 }
 
 .app-info-wrapper,
@@ -87,6 +91,7 @@ a {
     font-size: 1.4em;
 }
 
+.app-info-wrapper,
 .download-info-wrapper {
     padding: 40px 0 0 0;
 }
@@ -175,7 +180,6 @@ a {
 .account-wrapper,
 .varieties-wrapper,
 .checkout-wrapper {
-    /* margin: 100px 0; */
     display: flex;
     justify-content: space-around;
 }
@@ -260,11 +264,15 @@ a {
 
 @media (max-width: 1200px) {
     .adaptive {
-        margin: 0 auto;
+        margin: 30px auto;
         display: block;
         text-align: center;
         font-size: 17px;
-        padding: 40px;
+        padding: 30px;
+    }
+
+    .background-img {
+        padding-bottom: 40px;
     }
 
     .head {
@@ -274,7 +282,7 @@ a {
     .phone-image > img {
         width: 460px;
         height: 582px;
-        margin: -120px 0 0 0;
+        margin: -70px 0 0 0;
     }
 
     .bottom-line {
@@ -295,11 +303,6 @@ a {
     .checkout-wrapper-text {
         margin-bottom: 30px;
     }
-
-    .nav-bar > li > a {
-        padding: 100px;
-        margin: 0 auto;
-    }
 }
 
 @media (max-width: 650px) {
@@ -316,12 +319,5 @@ a {
 
     .social {
         flex: 0.7;
-    }
-}
-
-@media (max-width: 900px) {
-    .nav-bar > li > a {
-        padding: 35px;
-        margin: 0 auto;
     }
 }
